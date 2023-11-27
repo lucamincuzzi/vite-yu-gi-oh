@@ -19,7 +19,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../src/style/mixins" as *;
+@use "../src/style/partials/mixins" as *;
 
 header {
     padding: 10px 0;
