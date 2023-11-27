@@ -13,7 +13,10 @@ export default {
 
 <template>
     <div class="container">
-        <div class="row">
+        <h4>
+            Found {{ store.cards.length }} cards
+        </h4>
+        <div class="row gy-3">
             <div v-for="card in store.cards" class="col">
                 <AppCard :card="card" />
             </div>
@@ -22,5 +25,20 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.container {
+    padding: 30px;
+    background-color: white;
+
+    h4 {
+        background-color: black;
+        color: white;
+        margin-bottom: 0px;
+        padding: 20px;
+    }
+
+    .col {
+    width: calc(100% / 5) !important;
+}
+}
 
 </style>
