@@ -1,0 +1,15 @@
+@use "../style/variables" as *;
+
+@import "bootstrap/scss/bootstrap.scss";
+
+@import '@fontsource/roboto';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font;
+}
