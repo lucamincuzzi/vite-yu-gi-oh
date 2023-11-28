@@ -16,7 +16,7 @@ export default {
     </section>
 </template>
 <style lang="scss" scoped>
-@use "./style/partials/variables" as *;
+@use "../style/partials/variables" as *;
 
 section {
     min-height: 1000px;

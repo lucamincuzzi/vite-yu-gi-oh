@@ -21,7 +21,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "./style/partials/variables" as *;
+@use "../style/partials/variables" as *;
 
 .card {
     background-color: $main-bg-color;

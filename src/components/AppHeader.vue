@@ -11,7 +11,7 @@ export default {
 <template>
     <header>
         <div class="container d-flex align-items-center gap-3">
-            <img src="../src/assets/img/yu-gi-oh-logo.png"
+            <img src="../assets/img/yu-gi-oh-logo.PNG"
                 alt="Logo Yu-Gi-Oh!">
             <h1>Yu-Gi-Oh API</h1>
         </div>
