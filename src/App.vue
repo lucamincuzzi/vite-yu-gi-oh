@@ -1,8 +1,8 @@
 <script>
 import axios from "axios";
-import { store } from "../store";
-import AppHeader from '../components/AppHeader.vue';
-import AppContent from "../components/AppContent.vue";
+import { store } from "./store";
+import AppHeader from './components/AppHeader.vue';
+import AppContent from "./components/AppContent.vue";
 
 export default {
     data() {
