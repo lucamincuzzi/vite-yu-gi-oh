@@ -1,10 +1,28 @@
 <script>
+import { store } from "../store";
+import axios from 'axios';
 import AppArchetypeSelector from './AppArchetypeSelector.vue';
 import AppCardsList from './AppCardsList.vue';
 
 export default {
     data() {
-        return {};
+        return {
+            store,
+        };
+    },
+    methods: {
+        changeList: function() {
+            axios
+            .get(`${this.store.apiUrl}?archetype=${this.store.archetype}`, {
+                params: {
+                    num: 20,
+                    offset: 0,
+                }
+            })
+            .then((resp) => {
+                this.store.cards = resp.data.data
+            })
+        }
     },
     components: { AppCardsList, AppArchetypeSelector }
 }
@@ -12,7 +30,7 @@ export default {
 <template>
     <section>
         <div class="wrapper p-4">
-            <AppArchetypeSelector />
+            <AppArchetypeSelector @archetypeChanged="changeList" />
             <AppCardsList />
         </div>
     </section>

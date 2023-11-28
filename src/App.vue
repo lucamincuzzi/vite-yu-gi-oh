@@ -11,7 +11,7 @@ export default {
         };
     },
     created() {
-      axios.get("https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Madolche", {
+      axios.get(`${this.store.apiUrl}`, {
         params: {
           num: 20,
           offset: 0,
