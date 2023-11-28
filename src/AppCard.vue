@@ -32,6 +32,7 @@ export default {
         h4 {
             font-size: 1rem;
             font-weight: bold;
+            text-align: center;
         }
 
         .card-archetype {
