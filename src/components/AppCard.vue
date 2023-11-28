@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="card">
+    <div class="card h-100">
         <img :src="card.card_images[0].image_url" alt="">
         <div class="card-info d-flex flex-column p-4">
             <div class="card-name">
@@ -26,7 +26,6 @@ export default {
 .card {
     background-color: $main-bg-color;
     color: white;
-    height: 460px;
 
     .card-info {
         h4 {

@@ -16,8 +16,8 @@ export default {
         <h4>
             Found {{ store.cards.length }} cards
         </h4>
-        <div class="row gy-3">
-            <div v-for="card in store.cards" class="col">
+        <div class="row row-cols-5 gy-3">
+            <div v-for="(card, index) in store.cards" :key="store.cards[index].id" class="col">
                 <AppCard :card="card" />
             </div>
         </div>
@@ -35,10 +35,6 @@ export default {
         margin-bottom: 0px;
         padding: 20px;
     }
-
-    .col {
-    width: calc(100% / 5) !important;
-}
 }
 
 </style>
