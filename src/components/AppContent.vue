@@ -1,16 +1,18 @@
 <script>
+import AppArchetypeSelector from './AppArchetypeSelector.vue';
 import AppCardsList from './AppCardsList.vue';
 
 export default {
     data() {
         return {};
     },
-    components: { AppCardsList }
+    components: { AppCardsList, AppArchetypeSelector }
 }
 </script>
 <template>
     <section>
-        <div class="wrapper">
+        <div class="wrapper p-4">
+            <AppArchetypeSelector />
             <AppCardsList />
         </div>
     </section>
